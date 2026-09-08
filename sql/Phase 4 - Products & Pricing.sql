@@ -1,11 +1,16 @@
--- Phase 4 — Products & Pricing
+-- ========================================================================================================================
+-- PHASE 4 - PRODUCTS & PRICING
+-- ========================================================================================================================
 
+
+-- ========================================================================================================================
 -- 16. Products Available in Every Store
 -- Identify products appearing in every store's inventory.
 -- Then calculate their:
 -- Units sold
 -- Revenue
 -- Profit
+-- ========================================================================================================================
 
 SELECT
   i.store_id AS store_id,
@@ -27,13 +32,14 @@ GROUP BY
 ORDER BY
   product_count DESC
 
+-- ========================================================================================================================
 -- 17.Product Distribution
 -- Classify products:
 -- Universal: 100%
 -- High: 75–99%
 -- Medium: 50–74%
 -- Low: <50%
-  
+-- ========================================================================================================================
 
 WITH productstorecount AS (
   SELECT
@@ -60,6 +66,7 @@ SELECT
 FROM productstorecount AS psc, totalstores AS ts
 ORDER BY store_count DESC;
 
+-- ========================================================================================================================
 -- 18. Price Bands
 -- Use exactly:
 -- <5
@@ -67,6 +74,7 @@ ORDER BY store_count DESC;
 -- 11-25
 -- 26-50
 -- 50+
+-- ========================================================================================================================
 
 SELECT
   product_id,
@@ -81,6 +89,7 @@ SELECT
 FROM `maven.products`
 ORDER BY product_price DESC;
 
+-- ========================================================================================================================
 -- 19. Price vs Sales
 -- Show:
 -- Product
@@ -89,6 +98,7 @@ ORDER BY product_price DESC;
 -- Revenue
 -- Profit
 -- Then analyze whether expensive products generally sell fewer units.
+-- ========================================================================================================================
 
 WITH
   product_metrics AS (
@@ -135,8 +145,10 @@ SELECT
 FROM pct_calculations
 ORDER BY units_sold DESC;
 
+-- ========================================================================================================================
 -- 20. Same Price Within Category
 -- Find products sharing the same price within the same category.
+-- ========================================================================================================================
 
 SELECT
   p.product_name,
@@ -151,10 +163,12 @@ WHERE
     <>
       pt.product_id
 
-21. Gross Margin Ranking
-Rank products by gross margin %.
-hen compare margin % against absolute gross profit.
-        
+-- ========================================================================================================================
+-- 21. Gross Margin Ranking
+-- Rank products by gross margin %.
+-- Then compare margin % against absolute gross profit.
+-- ========================================================================================================================
+
 WITH gross AS (
   SELECT
     p.product_name,
@@ -178,10 +192,12 @@ SELECT *, rank() OVER (ORDER BY gross_margin DESC) AS rank_gross_margin
 FROM gross
 ORDER BY gross.absolute_gross_profit DESC;
 
+-- ========================================================================================================================
 -- 22.Revenue vs Profit Champions
 -- Find products that appear in both:
 -- Top 10 revenue
 -- Top 10 gross profit
+-- ========================================================================================================================
 
 WITH
   top10revenue AS (
