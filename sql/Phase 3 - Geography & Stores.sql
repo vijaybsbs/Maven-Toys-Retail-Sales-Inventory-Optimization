@@ -1,5 +1,9 @@
--- Phase 3 — Geography & Stores
+-- ========================================================================================================================
+-- PHASE 3 - GEOGRAPHY & STORES
+-- ========================================================================================================================
 
+
+-- ========================================================================================================================
 -- 11. City Revenue Ranking
 -- Find:
 -- Number of stores
@@ -7,6 +11,7 @@
 -- Revenue
 -- Profit
 -- Revenue per store
+-- ========================================================================================================================
 
 SELECT
   st.store_city,
@@ -33,12 +38,16 @@ GROUP BY
 ORDER BY
   revenue_M DESC
 
+
+-- ========================================================================================================================
 -- 12. Store Location Performance
 -- Compare:
 -- Downtown
 -- Commercial
 -- Residential
 -- Airport
+-- ========================================================================================================================
+  
 SELECT
   st.store_location,
   COUNT(DISTINCT st.store_id) AS store_count,
@@ -59,10 +68,13 @@ GROUP BY
 ORDER BY
   revenue_M DESC
 
-    -- 13. Store Age vs Revenue
-    -- Calculate store age using store_open_date.
-    -- Then compare store age with revenue.
-    WITH lastest_date AS (
+-- ========================================================================================================================
+-- 13. Store Age vs Revenue
+-- Calculate store age using store_open_date.
+-- Then compare store age with revenue.
+-- ========================================================================================================================
+
+WITH lastest_date AS (
       SELECT
         max(store_open_date) AS max_open_date
       FROM `maven.stores`
@@ -80,8 +92,11 @@ CROSS JOIN lastest_date l
 GROUP BY 1, 2
 ORDER BY 3 DESC
 
+-- ========================================================================================================================
 -- 14.Store Revenue Contribution
 -- Calculate each store's percentage of total company revenue.
+-- ========================================================================================================================
+
 SELECT
   store_name,
   format('$%.2fM', revenue / 1000000) AS store_revenue,
@@ -102,9 +117,12 @@ FROM
     ORDER BY
       revenue DESC
   )
-
+  
+-- ========================================================================================================================
 -- 15.Geographic Concentration
 -- What percentage of company revenue comes from the top 5 cities?
+-- ========================================================================================================================
+  
 SELECT
   store_city,
   format('$%.2fM', revenue / 1000000) AS revenue_M,
