@@ -2,14 +2,14 @@
 
 ![SQL](https://img.shields.io/badge/SQL-GoogleSQL-blue)
 ![BigQuery](https://img.shields.io/badge/Google%20BigQuery-Data%20Warehouse-orange)
-![Looker Studio](https://img.shields.io/badge/Looker%20Studio-Dashboard-yellow)
+![Data Studio](https://img.shields.io/badge/Data%20Studio-Dashboard-yellow)
 ![Status](https://img.shields.io/badge/Project-Completed-success)
 
 ## 📊 Project Overview
 
 An end-to-end **Retail Sales & Inventory Optimization** case study for Maven Toys, a toy-store chain operating across Mexico.
 
-The project combines **Google BigQuery, GoogleSQL and Looker Studio** to transform raw sales, product, store and inventory data into business-focused insights for sales, merchandising, inventory and management decisions.
+The project combines **Google BigQuery, GoogleSQL and Data Studoio (Looker Studio)** to transform raw sales, product, store and inventory data into business-focused insights for sales, merchandising, inventory and management decisions.
 
 ### Key Areas
 - Sales and profitability
@@ -23,7 +23,7 @@ The project combines **Google BigQuery, GoogleSQL and Looker Studio** to transfo
 
 ## 🚀 Live Dashboard
 
-### [▶ View Interactive Looker Studio Dashboard](https://datastudio.google.com/reporting/275db6a6-f137-4c08-bebb-b09210bb19aa)
+### [▶ View Interactive Data Studio Dashboard](https://datastudio.google.com/reporting/275db6a6-f137-4c08-bebb-b09210bb19aa)
 
 Dashboard sections:
 1. Sales & Performance
@@ -32,7 +32,7 @@ Dashboard sections:
 4. Time & Seasonality
 5. Advanced Analysis
 
-> The dashboard is hosted in Looker Studio. GitHub contains the SQL, datasets, documentation and report outputs supporting the dashboard.
+> The dashboard is hosted in Data Studio. GitHub contains the SQL, datasets, documentation and report outputs supporting the dashboard.
 
 ## 🎯 Business Problem
 
@@ -65,7 +65,7 @@ Management needs to understand:
 |---|---|
 | Google BigQuery | Data warehouse and analytical views |
 | GoogleSQL | Data profiling, transformation and business analysis |
-| Looker Studio | Interactive dashboard |
+| Data Studio | Interactive dashboard |
 | GitHub | Version control and portfolio presentation |
 | Word / PDF | Detailed analysis documentation |
 
@@ -249,7 +249,7 @@ The top five cities contribute approximately **41.58% of revenue**. Use this ins
 
 Workflow:
 
-**Raw Data → BigQuery → GoogleSQL → Business Analysis → Looker Studio → Management Insights**
+**Raw Data → BigQuery → GoogleSQL → Business Analysis → Data Studio → Management Insights**
 
 # 📂 Repository Structure
 
@@ -340,7 +340,7 @@ Data Analytics / Business Intelligence Portfolio Project
 [**Maven Toys – Retail Sales & Inventory Optimization**](https://github.com/vijaybsbs/Maven-Toys-Retail-Sales-Inventory-Optimization)
 
 ### Interactive Dashboard
-[**Open Looker Studio Dashboard**](https://datastudio.google.com/reporting/275db6a6-f137-4c08-bebb-b09210bb19aa)
+[**Open Data Studio Dashboard**](https://datastudio.google.com/reporting/275db6a6-f137-4c08-bebb-b09210bb19aa)
 
 ---
 
@@ -348,6 +348,6 @@ Data Analytics / Business Intelligence Portfolio Project
 
 This portfolio project demonstrates how transactional retail data can be transformed into actionable business insights using:
 
-**BigQuery + GoogleSQL + Looker Studio + Business Analysis**
+**BigQuery + GoogleSQL + Data Studio + Business Analysis**
 
 The focus is not only on writing SQL, but on connecting analytical results to practical decisions across **sales, merchandising, inventory and store management**.
