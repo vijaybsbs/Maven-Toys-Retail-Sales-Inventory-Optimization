@@ -11,6 +11,18 @@ An end-to-end **Retail Sales & Inventory Optimization** case study for Maven Toy
 
 The project combines **Google BigQuery, GoogleSQL and Data Studoio (Looker Studio)** to transform raw sales, product, store and inventory data into business-focused insights for sales, merchandising, inventory and management decisions.
 
+## 📌 Data Formatting & Dashboard Readability
+
+**Note:** For selected analytical outputs, monetary values and percentages have been converted to **STRING format** and displayed in **Millions (M)** and **Percentage (%)** formats respectively. This was done only to **improve readability and presentation for business stakeholders** in the analytical outputs and documentation.
+
+For **Data Studio dashboard development and visualization**, the underlying measures were maintained as **numeric data types** to ensure that calculations, aggregations, filtering, sorting, KPI cards and charts function correctly.
+
+**Example:**
+Revenue → '$14.44M' for stakeholder-friendly presentation, while the underlying dashboard measure remains a numeric value '(14444572.35)'.
+Gross Margin → '27.79%' for presentation, while the dashboard calculation remains numeric.
+
+This separation ensures that the analysis remains **technically accurate and calculation-ready**, while the final outputs remain **easy for business stakeholders to interpret.**
+
 ### Key Areas
 - Sales and profitability
 - Product and category performance
