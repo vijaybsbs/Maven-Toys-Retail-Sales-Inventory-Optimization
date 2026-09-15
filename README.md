@@ -18,8 +18,8 @@ The project combines **Google BigQuery, GoogleSQL and Data Studoio (Looker Studi
 For **Data Studio dashboard development and visualization**, the underlying measures were maintained as **numeric data types** to ensure that calculations, aggregations, filtering, sorting, KPI cards and charts function correctly.
 
 **Example:**
-Revenue → '$14.44M' for stakeholder-friendly presentation, while the underlying dashboard measure remains a numeric value '(14444572.35)'.
-Gross Margin → '27.79%' for presentation, while the dashboard calculation remains numeric.
+Revenue → `$14.44M` for stakeholder-friendly presentation, while the underlying dashboard measure remains a numeric value `(14444572.35)`.
+Gross Margin → `27.79%` for presentation, while the dashboard calculation remains numeric.
 
 This separation ensures that the analysis remains **technically accurate and calculation-ready**, while the final outputs remain **easy for business stakeholders to interpret.**
 
