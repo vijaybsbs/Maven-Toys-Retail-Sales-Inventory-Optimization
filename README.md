@@ -13,7 +13,7 @@ The project combines **Google BigQuery, GoogleSQL and Data Studoio (Looker Studi
 
 ## 📌 Data Formatting & Dashboard Readability
 
-**Note:** For selected analytical outputs, monetary values and percentages have been converted to **STRING format** and displayed in **Millions (M)** and **Percentage (%)** formats respectively. This was done only to **improve readability and presentation for business stakeholders** in the analytical outputs and documentation.
+**Note:** For selected analytical outputs, monetary values and percentages have been converted to **STRING format** and displayed in **Millions (M)** and **Percentage (%)** formats respectively in **SQL Query**. This was done only to **improve readability and presentation for business stakeholders** in the analytical outputs and documentation.
 
 For **Data Studio dashboard development and visualization**, the underlying measures were maintained as **numeric data types** to ensure that calculations, aggregations, filtering, sorting, KPI cards and charts function correctly.
 
